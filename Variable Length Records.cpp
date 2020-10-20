@@ -5,18 +5,18 @@ using namespace std;
 fstream fp;
 class student{
 	public:
-		string name,regd,phone;
+		string name,reg,phone;
 		void pack();
 }temp;
 void student :: pack()
 {
 	cout<<"Register Number : "<<endl;
-	cin>>regd;
+	cin>>reg;
 	cout<<"Name : "<<endl;
 	cin>>name;
 	cout<<"Phone Number : "<<endl;
 	cin>>phone;
-	string packer=regd+'|'+name+'|'+phone+'|'+'#';
+	string packer=reg+'|'+name+'|'+phone+'|'+'#';
 	fp<<packer;
 }
 int main()
