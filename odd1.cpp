@@ -10,11 +10,11 @@ class student{
 }temp;
 void student :: pack()
 {
-	cout<<"Enter the regd number"<<endl;
+	cout<<"Register Number : "<<endl;
 	cin>>regd;
-	cout<<"Enter the name"<<endl;
+	cout<<"Name : "<<endl;
 	cin>>name;
-	cout<<"Enter the phone number"<<endl;
+	cout<<"Phone Number : "<<endl;
 	cin>>phone;
 	string packer=regd+'|'+name+'|'+phone+'|'+'#';
 	fp<<packer;
@@ -23,7 +23,7 @@ int main()
 {
 	fp.open("student.txt",ios::out);
 	int n,i=0;
-	cout<<"Enter the no.of records"<<endl;
+	cout<<"Enter Number of Students : "<<endl;
 	cin>>n;
 	while(i<n) {  temp.pack();	i++;	}
 	fp.close();
