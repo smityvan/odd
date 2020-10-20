@@ -16,17 +16,18 @@ class student
 			}		
 		void display()
 		{
-			cout<<"Registration Number = "<<regd<<"\nname = "<<name<<"\nphone = "<<phone<<endl;
+			cout<<"Registration Number : "<<regd<<"\nName : "<<name<<"\nPhone Number : "<<phone<<endl<<endl;
 		}
 }s[10];
 int main()
 {
-	fp.open("students.txt",ios::in);
-	int i=0;
-	while(!fp.eof())		
-	s[i++].unpack();
-	int n=i;i=0;
-	while(i<n-1){		s[i++].display();		}
+	fp.open("student.txt",ios::in);
+	int i=0,n=0;
+	while(fp)		
+		s[i++].unpack();
+	while(n<i-1){
+		cout<<"Student "<<n+1<<":\n";
+	 	s[n++].display();}
 	fp.close();
 	return 0;
 }
