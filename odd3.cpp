@@ -10,9 +10,9 @@ class lists
 		string l1[100],l2[100];
 		void match()
 			{
-				cout<<"\n \n Output :: \n \n ";
+				cout<<"Names Common in both Lists:\n";
 				int i1=0,i2=0;
-				while(i1<=count1&&i2<=count2)
+				while(i1<count1&&i2<count2)
 				{
 				if(l1[i1]==l2[i2])
 				{
