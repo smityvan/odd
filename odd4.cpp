@@ -10,7 +10,7 @@ int main(){
     {
         cin>>key;
         h=key%10;
-        while(a[h]!=0){
+        while(a[h]){
             h++;
             if(h==n)
                 h = 0;
